@@ -1,0 +1,15 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PopupControl : MonoBehaviour
+{
+    void Update()
+    {
+        // control the rotation of the canvas
+        transform.LookAt(Camera.main.transform);
+
+        // remove after 3 seconds
+        Destroy(gameObject, 3f);
+    }
+}
